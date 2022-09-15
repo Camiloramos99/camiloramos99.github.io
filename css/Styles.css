@@ -1,0 +1,138 @@
+#User-name {
+	text-align: center;
+}
+#AboutMe-text {
+	text-align: justify;
+}
+
+nav{
+ background-color: #e3f2fd;
+ box-shadow:0px 2px 5px #777;
+}
+
+.navbar-nav{
+ text-transform:uppercase;
+ color: #00B4DB;	
+
+}
+#profile-avatar{
+	text-align: center;
+}
+.avatar{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border-color: 0f3d3f;
+	border-width: 10%;
+	margin: 1%;
+}
+
+.container-bar{
+	width:100%;
+	max-width: 55px;
+	position: fixed;
+	left: 0;
+	top: 30%;
+}
+.container-bar a{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 17px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #e3f2fd;
+}
+.container-bar #title{
+	position: fixed;
+	background: #1c1c1c;
+	padding: 6px;
+	border-radius: 3px;
+	font-size: 15px;
+	margin-top: -4px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+.container-bar a:hover #title{
+	opacity: 1;
+	visibility: visible;
+	margin-left: 30px;
+}
+
+
+.container-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+#btn-social{
+	display: none;
+}
+.icon-forward{
+	cursor: pointer;
+	transition: all 0,4s;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #1c1c1c;
+}
+#btn-social:checked ~.icon-forward{
+	transform: rotate(0deg);
+}
+.icon-social{
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+#btn-social:checked ~ .icon-social{
+	transform: translateX(-100%);
+}
+.icon-github{
+	background: #0f3d3f;
+	border-radius: 0px 5px 0px 0px;
+}
+.icon-github:hover{
+	color: #ec34ca !important;
+}
+.icon-linkedin{
+	background: #0f3d3f;	
+}
+.icon-linkedin:hover{
+	color: #346eec !important;
+}
+.icon-mail{
+	background: #0f3d3f;
+}
+.icon-mail:hover{
+	color: #0983e0 !important;
+}
+.icon-whatsapp{
+	background: #0f3d3f;
+}
+.icon-whatsapp:hover{
+	color: #02f116 !important;
+}
+.icon-instagram{
+	background: #0f3d3f;
+	border-radius: 0px 0px 5px 0px;
+}	
+.icon-instagram:hover{
+	color: #cf013fdb !important;
+}
+body{
+	background: #74ebd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+

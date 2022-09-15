@@ -1,0 +1,23 @@
+var ArchivoVacio = {};
+
+var JsonObj = {
+	"nombrelibro":"El Toque De Midas", "precio":500 };
+}
+
+var JsonObj = {
+
+	"Nombre": "Camilo",
+	"Apellido": "Ramos",
+	"Nacimiento": 1999,
+	"Edad": 22, 
+	"Lenguajes":[
+		{"Nombre": "HTML", "Nivel": "Alto"},
+		{"Nombre": "Css", "Nivel": "Alto"},
+		{"Nombre": "JavaScript", "Nivel": "Medio"}
+        ],
+	"Pasatiempos":[
+		{"Nombre":"Leer"},
+		{"Nombre":"Futbol"},
+		{"Nombre":"Viajar"} 
+ 		]
+};
