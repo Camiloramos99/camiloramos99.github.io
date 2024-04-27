@@ -1,5 +1,58 @@
-#User-name {
+body{
+	background: #74ebd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#AboutMe {
+    width: 80%;
+    display: grid;
+    grid-template-columns: max-content;
+}
+.introduction-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.column1 {
+	flex: 1;
+	width: auto;
+	display: table-cell;
 	text-align: center;
+}
+
+.profession-title-animation {
+	color: #74ebd5;
+	margin: 0;
+	padding: 0;
+	font-family: "poppins", sans-serif;
+	font-size: 5.4vw;
+	transform: translateY(20px); 
+	-webkit-text-stroke: 0.3vw #383d52;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+}
+.profession-title-animation::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: #070707;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 2px solid #383d52;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+}
+
+#User-name {
+	text-align: left;
+	width: fit-content;
 }
 #AboutMe-text {
 	text-align: justify;
@@ -16,7 +69,7 @@ nav{
 
 }
 #profile-avatar{
-	text-align: center;
+	text-align: left;
 }
 .avatar{
 	width: 200px;
@@ -25,6 +78,7 @@ nav{
 	border-color: 0f3d3f;
 	border-width: 10%;
 	margin: 1%;
+	right: 20px;
 }
 
 .container-bar{
@@ -126,13 +180,21 @@ nav{
 .icon-instagram:hover{
 	color: #cf013fdb !important;
 }
-body{
-	background: #74ebd5;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+@keyframes animate 
+{ 
+	0%,10%,100% 
+	{
+		width: 0;
+	}
+	70%,90% 
+	{
+		width: 100%;
+
+	}
 
 }
-
-
-
-
