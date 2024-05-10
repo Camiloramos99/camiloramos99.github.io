@@ -1,89 +1,22 @@
+/*Navbar*/
 
-body{
-background: rgb(24,37,54);
-background: linear-gradient(0deg, rgba(24,37,54,1) 0%, rgba(26,34,53,1) 97%);
-}
-p{
+.navbar-nav a{
 	color: #e3f2fd;
 }
-.column1 {
-	display: grid;
-	justify-items: center;
-}
-.column2 {
-	display: grid;
-	justify-items: center;
-}
-.avatar {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	margin: 1%;
-}
-.text-i-am {
-	font-size: 1.25rem;
-    font-weight: 500;
-	margin-bottom: 0;
-}
-#User-name {
-	font-size: 1.5rem;
-    font-weight: 700;
-	color: #e3f2fd;
-
-}
-.profession-title-animation {
-	color: #74ebd5;
-	margin: 0;
-	padding: 0;
-	font-family: "poppins", sans-serif;
-	font-size: 2.4vw;
-	transform: translateY(0); 
-	-webkit-text-stroke: 0.1vw #383d52;
-	text-transform: uppercase;
-	white-space: nowrap;
-
-}
-.profession-title-animation::before {
-	content: attr(data-text);
-	position: absolute;
-	width: 0;
-	height: 100%;
-	color: #070707;
-	-webkit-text-stroke: 0vw #383d52;
-	border-right: 2px solid #383d52;
-	overflow: hidden;
-	animation: animate 3s linear infinite;
-}
-
-
-
-
-
-
-
-#AboutMe-text {
-	text-align: justify;
-}
-
 nav{
- background-color: #0f3d3f;
- box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
+	background-color: #004d40;
+	box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 .navbar-nav{
- text-transform:uppercase;
- color: white;	
-
-}
-
-
-
+	text-transform:uppercase;
+	color: white;	
+}  
 .container-bar{
 	width:100%;
 	max-width: 55px;
 	position: fixed;
-	left: 0;
-	top: 30%;
+    left: 0;
+    top: 30%;
 }
 .container-bar a{
 	display: block;
@@ -109,9 +42,7 @@ nav{
 	opacity: 1;
 	visibility: visible;
 	margin-left: 30px;
-}
-
-
+}    
 .container-bar #title:after{
 	position: absolute;
 	content: '';
@@ -122,6 +53,9 @@ nav{
 	right: 100%;
 	top: 8px;
 }
+
+/*Socialbar*/
+
 #btn-social{
 	display: none;
 }
@@ -132,7 +66,7 @@ nav{
 	margin-bottom: 5px;
 	display: inline-block;
 	transform: rotate(180deg);
-	color: #1c1c1c;
+	color: #e3f2fd;
 }
 #btn-social:checked ~.icon-forward{
 	transform: rotate(0deg);
@@ -146,41 +80,120 @@ nav{
 	transform: translateX(-100%);
 }
 .icon-github{
-	background: #0f3d3f;
+	background: #004d40;
 	border-radius: 0px 5px 0px 0px;
 }
 .icon-github:hover{
 	color: #ec34ca !important;
 }
 .icon-linkedin{
-	background: #0f3d3f;	
+	background: #004d40;	
 }
 .icon-linkedin:hover{
 	color: #346eec !important;
 }
 .icon-mail{
-	background: #0f3d3f;
+	background: #004d40;
 }
 .icon-mail:hover{
 	color: #0983e0 !important;
 }
 .icon-whatsapp{
-	background: #0f3d3f;
+	background: #004d40;
 }
 .icon-whatsapp:hover{
 	color: #02f116 !important;
 }
 .icon-instagram{
-	background: #0f3d3f;
+	background: #004d40;
 	border-radius: 0px 0px 5px 0px;
 }	
 .icon-instagram:hover{
 	color: #cf013fdb !important;
 }
 
+/*Body*/
 
+body{
+background: rgb(24,37,54);
+background: linear-gradient(0deg, rgba(24,37,54,1) 0%, rgba(26,34,53,1) 97%);
+}
 
+h1, h2, h3, h4, li, p, a {
+	color: #e3f2fd;
+}
+.principal-container {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: repeat(3, 100vh);
+}
 
+/*AboutMe */
+
+.container-AboutMe {
+	grid-column: 2 / 3;
+}
+.column1 {
+	display: grid;
+	justify-items: center;
+}
+.column2 {
+	display: grid;
+	justify-items: center;
+}
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 1%;
+}
+.text-i-am {
+	font-size: 1.25rem;
+    font-weight: 500;
+	margin-bottom: 0;
+}
+#User-name {
+	font-size: 3.5rem;
+    font-weight: 700;
+	color: #e3f2fd;
+}
+.profession-title-animation {
+	color: #e3f2fd;
+	margin: 0;
+	padding: 0;
+	font-family: "poppins", sans-serif;
+	font-size: 2.4vw;
+	transform: translateY(0); 
+	-webkit-text-stroke: 0.1vw #383d52;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+}
+.profession-title-animation::before {
+	content: attr(data-text);
+	position: absolute;
+	width: 0;
+	height: 100%;
+	color: #00796b;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 2px solid #383d52;
+	overflow: hidden;
+	animation: animate 3s linear infinite;
+}
+
+/*Projects*/
+
+.container-Projects {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+/*ContactMe*/
+
+.container-ContactMe {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+}
 
 @keyframes animate 
 { 
@@ -191,7 +204,5 @@ nav{
 	70%,90% 
 	{
 		width: 100%;
-
 	}
-
 }
