@@ -1,37 +1,44 @@
+
 body{
-	background: #74ebd5;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+background: rgb(24,37,54);
+background: linear-gradient(0deg, rgba(24,37,54,1) 0%, rgba(26,34,53,1) 97%);
 }
-
-#AboutMe {
-    width: 80%;
-    display: grid;
-    grid-template-columns: max-content;
+p{
+	color: #e3f2fd;
 }
-.introduction-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-
 .column1 {
-	flex: 1;
-	width: auto;
-	display: table-cell;
-	text-align: center;
+	display: grid;
+	justify-items: center;
 }
+.column2 {
+	display: grid;
+	justify-items: center;
+}
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 1%;
+}
+.text-i-am {
+	font-size: 1.25rem;
+    font-weight: 500;
+	margin-bottom: 0;
+}
+#User-name {
+	font-size: 1.5rem;
+    font-weight: 700;
+	color: #e3f2fd;
 
+}
 .profession-title-animation {
 	color: #74ebd5;
 	margin: 0;
 	padding: 0;
 	font-family: "poppins", sans-serif;
-	font-size: 5.4vw;
-	transform: translateY(20px); 
-	-webkit-text-stroke: 0.3vw #383d52;
+	font-size: 2.4vw;
+	transform: translateY(0); 
+	-webkit-text-stroke: 0.1vw #383d52;
 	text-transform: uppercase;
 	white-space: nowrap;
 
@@ -39,47 +46,37 @@ body{
 .profession-title-animation::before {
 	content: attr(data-text);
 	position: absolute;
-	top: 0;
-	left: 0;
 	width: 0;
 	height: 100%;
 	color: #070707;
 	-webkit-text-stroke: 0vw #383d52;
 	border-right: 2px solid #383d52;
 	overflow: hidden;
-	animation: animate 6s linear infinite;
+	animation: animate 3s linear infinite;
 }
 
-#User-name {
-	text-align: left;
-	width: fit-content;
-}
+
+
+
+
+
+
 #AboutMe-text {
 	text-align: justify;
 }
 
 nav{
- background-color: #e3f2fd;
- box-shadow:0px 2px 5px #777;
+ background-color: #0f3d3f;
+ box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-nav{
  text-transform:uppercase;
- color: #00B4DB;	
+ color: white;	
 
 }
-#profile-avatar{
-	text-align: left;
-}
-.avatar{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	border-color: 0f3d3f;
-	border-width: 10%;
-	margin: 1%;
-	right: 20px;
-}
+
+
 
 .container-bar{
 	width:100%;
@@ -99,7 +96,7 @@ nav{
 }
 .container-bar #title{
 	position: fixed;
-	background: #1c1c1c;
+	background: #e3f2fd;
 	padding: 6px;
 	border-radius: 3px;
 	font-size: 15px;
