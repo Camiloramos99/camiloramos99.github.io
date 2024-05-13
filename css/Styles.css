@@ -1,6 +1,7 @@
 :root {
 	--color-verde: rgba(0, 77, 64, 0.5);
 	--color-verdeAzulado: rgb(24,37,54);
+	--color-background: linear-gradient(0deg, rgba(24,37,54,1) 0%, rgba(26,34,53,1) 97%);
 	--color-blanco: #e3f2fd;
   }
 
@@ -122,10 +123,12 @@ nav{
 
 body{
 background: var(--color-verdeAzulado);
-background: linear-gradient(0deg, rgba(24,37,54,1) 0%, rgba(26,34,53,1) 97%);
+background: var(--color-background);
+display: flex;
+flex-direction: column;
 }
 
-h1, h2, h3, h4, li, p, a {
+h1, h2, h3, h4, h5, li, p, a, label {
 	color: var(--color-blanco);
 }
 .principal-container {
@@ -274,7 +277,58 @@ h1, h2, h3, h4, li, p, a {
 .container-ContactMe {
 	grid-column: 2 / 3;
 	grid-row: 3 / 4;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
+.form-contact {
+	grid-column: 1 / 2;
+	width: 70%;
+}
+.contactMe-title {
+	margin-top: 100px;
+}
+#user-message, #user-email, #user-name-input {
+	background: var(--color-background);
+	position: sticky;
+	left: 1.25rem;
+	border: 2px solid var(--color-blanco);
+}
+#user-message {
+	height: 8rem;
+}
+#user-message::placeholder {
+    position: relative;
+    top: -43px; /* Mueve el texto del placeholder hacia arriba */
+}
+.form-label {
+	background-color: var(--color-verdeAzulado);
+	position: relative;
+    z-index: 2;
+    left: 1.5rem;
+	padding: 0.25rem;
+}
+.form-control {
+	margin-top: -23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
 	display: flex;
 	flex-direction: column;
