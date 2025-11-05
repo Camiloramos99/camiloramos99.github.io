@@ -684,6 +684,10 @@ figure.snip1321 h4 {
     background-color: rgba(87, 35, 100, 0.643);      
 }
 
+#tag-firebase {
+    background-color: rgba(255, 166, 17, 0.5);
+}
+
 .project-description {
     font-size: 14px;
     font-style: italic;

@@ -118,6 +118,7 @@
       projectDescriptionOne: `A robust and scalable e-commerce features sign-up, log-in, shopping cart, order checkout, and a search bar, providing a seamless user experience.`,
       projectDescriptionTwo: `Lets users browse the catalog, view detailed product information, add products to the cart, and more features for a delightful experience.`,
       projectDescriptionThree: `Elegant portfolio landing designed to reflect the photographer’s unique style and earn client trust—crafted with attention to every detail.`,
+      projectDescriptionFour: `Habit tracking app with authentication, calendar-based visualization, and real-time sync to encourage daily consistency.`,
       ViewProjectButton: `See project <i class="fa fa-eye"></i>`,
       contactMeDescription: "Contact Me If you have a project in mind or want to collaborate, i am always open to new ideas and would love to hear from you. I will respond promptly your message.",
       sendMessageButton: "Send Message"
@@ -141,6 +142,7 @@
       projectDescriptionOne: `E-commerce escalable con login, registro, barra de búsqueda, carrito de compras y resumen de orden, enfocado en fluidez y eficiencia.`,
       projectDescriptionTwo: `Cuenta con un catálogo, vista detallada de cada producto, carrito de compras y mas funciones para una experiencia intuitiva y agradable.`,
       projectDescriptionThree: `portfolio elegante, diseñado para reflejar el estilo único del fotógrafo y generar confianza en sus clientes, fué creado con atención minuciosa a cada detalle.`,
+      projectDescriptionFour: `App de seguimiento de hábitos con autenticación de usuarios, calendario y sincronización en tiempo real para fomentar la constancia diaria.`,
       ViewProjectButton: `Ver proyecto <i class="fa fa-eye"></i>`,
       contactMeDescription: "Contáctame Si tienes un proyecto en mente o quieres colaborar, estoy abierto a nuevas ideas y me encantaria escucharte. Responderé tu mensaje con la mayor prontitud posible.",
       sendMessageButton: "Enviar Mensaje"
