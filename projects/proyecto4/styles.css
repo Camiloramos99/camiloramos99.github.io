@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url(fontawesome.css);
+
+/* Reset básico */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y colores */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background: url(../../assets/images/page-bg.webp) no-repeat center center fixed;         
+}
+
+/* Hero / Portada */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background-color: rgb(19 25 33 / var(--tw-bg-opacity));
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-bottom: 2px solid #00a43c;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-logo {
+  display: inline-block;
+  transform: translate(4px, 9px);
+  width: 62px;
+  height: auto;
+}
+
+.project-title {
+  display: inline-block;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem; 
+  color: #ffffff;
+  text-shadow: 0 0 4px #ffffff;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2E8C88;
+}
+
+.project-description {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 40px;
+}
+
+.github-button,
+.website-button {
+  font-size: 16px;
+  color: #fff;
+  width: 25%;
+  height: 50px;
+  display: inline-flex;        
+  align-items: center;
+  justify-content: center;
+  border: solid 1.2px #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 
+    border-color 0.3s ease, 
+    box-shadow 0.3s ease, 
+    transform 0.2s ease;
+}
+
+.github-button {
+  background-color: black;
+}
+
+.github-button:hover {
+  border-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.website-button {
+  background-color: #00AEEF;
+}
+
+.website-button:hover {
+  border-color: transparent;
+  box-shadow: 0 0 8px rgba(0, 174, 239, 0.6);
+  transform: translateY(-2px);
+}
+
+.fa-github, .fa-globe {
+  margin-left: 6px;
+}
+
+/* Sección de funcionalidades */
+.features {
+  width: 90%;
+  max-width: 1100px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+  align-items: center;
+  border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.feature-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  max-height: 90%;
+}
+
+.feature-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.feature-text p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.linkAPI {
+  text-decoration: none;
+  color: #4FC3F7;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .project-logo {
+    width: 30px;
+  }
+
+  .github-button {
+    width: 45%;
+  }
+
+ .website-button {
+    width: 45%;
+ }
+
+  .feature {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .feature-text {
+    order: 1;
+  }
+
+  .feature-img {
+    order: 2;
+  }
+
+  .feature:nth-child(even) .feature-img {
+    order: 2; 
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-subtitle {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    padding: 0 0.2rem;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle Proyecto | Follow Up</title>
+  <link rel="stylesheet" href="../../assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Portada -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="../../assets/images/proyectos/proyecto4/Logo.png" alt="Follow Up Logo" class="project-logo" />
+      <h1 class="project-title">FOLLOW UP</h1>
+      <h2 class="project-subtitle">Habit tracker desarrollado con React, Calendar Heatmap y Firebase para autenticación y despliegue.</h2>
+      <p class="project-description">Aplicación web que ayuda a los usuarios a formar y mantener hábitos de forma visual e intuitiva. Inspirada en el calendario de contribuciones de GitHub, permite registrar y visualizar el progreso diario mediante un heatmap interactivo. Con enfoque en la experiencia de usuario, incluye autenticación, modo invitado, sincronización entre Firestore y almacenamiento local, y un flujo de carga optimizado. Proyecto personal enfocado en combinar funcionalidad, diseño limpio y una estructura escalable con buenas prácticas de desarrollo. </p>
+      <div class="buttons-container">
+        <a
+          href="https://github.com/Camiloramos99/FollowUp" 
+          target="_blank" 
+          class="github-button"
+          > Ver Código
+          <i class="fa fa-github"></i>
+        </a>
+        <a
+          href="https://follow-up-a3a76.web.app/" 
+          target="_blank" 
+          class="website-button"
+          > Ver Website
+          <i class="fa fa-globe"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Funcionalidades -->
+  <main class="features">
+    <!-- Fila 1 -->
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Vista General</h2>
+        <p>Trabajé en la interfaz principal que muestra el calendario de hábitos y su sincronización con el almacenamiento local. Aprendí a manejar estados globales y persistir datos de forma eficiente, garantizando que el progreso del usuario se mantenga incluso después de recargar la página. Este proceso me ayudó a comprender mejor cómo conectar la lógica de front-end con la gestión de datos y la experiencia del usuario.
+        </p>
+      </div>
+      <img src="../../assets/images/proyectos/proyecto4/calendarLocalStorage.png" alt="GeneralView" class="feature-img">      
+    </div>
+
+    <!-- Fila 2 -->
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Vista Usuario Registrado</h2>
+        <p>Implementé la integración con Firebase para manejar la autenticación y sincronizar los datos del usuario en la nube. Este trabajo me permitió entender cómo conectar una app React con servicios externos, manejar distintos estados de sesión y asegurar que los datos se mantengan actualizados en tiempo real.
+          <br>Mejoré mis habilidades en diseño de flujos de login, validación y sincronización entre Firestore y localStorage.
+        </p>
+      </div>
+      <img src="../../assets/images/proyectos/proyecto4/CalendarFirebase.png" alt="RegisteredUser" class="feature-img">      
+    </div>
+
+    <!-- Fila 3 -->
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Form De Manejo De Habitos</h2>
+        <p>Desarrollé el formulario que permite crear, editar y marcar hábitos, integrándolo con el calendario visual. A través de esta sección aprendí a combinar componentes controlados, manejo de eventos y actualización de estados en tiempo real. 
+          <br>También mejoré la usabilidad del flujo, simplificando la forma en que el usuario interactúa con sus hábitos diarios y visualiza su progreso.
+        </p>
+      </div>
+      <img src="../../assets/images/proyectos/proyecto4/Form.png" alt="FormControlHabits" class="feature-img">
+    </div>
+
+    <!-- Fila 4 -->
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Vista De Registro</h2>
+        <p>Diseñé y estructuré la vista de registro de nuevos usuarios, trabajando en la validación de campos y la gestión de errores para ofrecer una experiencia clara y accesible. 
+          <br>Este desarrollo me permitió reforzar mis conocimientos sobre formularios en React y sobre cómo aplicar buenas prácticas en la creación de interfaces limpias y funcionales.
+        </p>
+      </div>
+      <img src="../../assets/images/proyectos/proyecto4/Register.png" alt="RegisterView" class="feature-img">      
+    </div>
+
+    <!-- Fila 5 -->
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Vista Inicio Sesión</h2>
+        <p>Sección con un formulario de contacto de diseño moderno, pensado para ser intuitivo y fácil de completar.
+          <br>Implementé la pantalla de inicio de sesión con opciones tanto para usuarios registrados como para invitados. Aprendí a manejar flujos condicionales según el tipo de usuario y a mantener una navegación coherente dentro de la app. 
+          <br>Esta parte me ayudó a comprender la importancia de ofrecer flexibilidad en la experiencia del usuario y de adaptar la interfaz a distintos contextos de uso.
+        </p>
+      </div>
+      <img src="../../assets/images/proyectos/proyecto4/SignIn.png" alt="SignInView" class="feature-img">      
+    </div>
+  </main>
+
+</body>
+</html>
