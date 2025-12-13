@@ -118,7 +118,7 @@ html {
 }
 
 .main-nav li:last-child a {
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 2px solid #ffffff29;
 }
 
 .main-nav li {
@@ -134,13 +134,12 @@ html {
     color: var(--text-color);
     width: 100%;
     transition: all 0.5s;
-    border-top: 2px solid var(--secondary-color);
+    border-top: 2px solid #ffffff29;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background: #00a37654;
 }
 
 /* Sidebar Menu */
@@ -258,7 +257,7 @@ html {
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
-  background-color: var(--primary-color);
+  background: linear-gradient(to bottom, #00a37654, #00000003);
   box-sizing: border-box;
   height: 100vh;  
   max-height: 100vh !important;
